@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mise en page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Accueil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sport">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categorie">Catégories</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#categorie" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Action
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#supporter">Supporters</a></li>
+                <li><a class="dropdown-item" href="#stade">Lieux de rencontres</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#bas">Bas de page</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Rechercher</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bordure">
+      <div class="row justify-content-center">
+        <div id="carouselExampleIndicators" class="carousel slide col-md-3" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="f1.jpg" class="d-block w-100" alt="sport1">
+            </div>
+            <div class="carousel-item">
+              <img src="foot.jpg" class="d-block w-100" alt="sport2">
+            </div>
+            <div class="carousel-item">
+              <img src="boxe.jpg" class="d-block w-100" alt="sport3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+          <div id="sport" class="col-md-7">
+            <h1>Sports</h1>
+            <p>Le terme de « sport » a pour racine le mot de vieux français desport qui signifie « divertissement, plaisir physique ou de l'esprit ». Antérieurement il peut être rattaché au latin portus, comme dans transport, export, import, déporter, déport, etc., qui désignait simplement un port, un lieu de passage marin. En traversant la Manche, desport se mue en « sport » et évacue de son champ la notion générale de loisirs pour se concentrer sur les seules activités physiques et mentales.</p>
+            <a href="https://fr.wikipedia.org/wiki/Sport"><button type="button" class="btn btn-primary btn-sm">En savoir plus</button></a>
+          </div>
+      </div>
+    </div>
+
+  <div id="categorie" class="container">
+     <div class="row">
+        <div class="col-md-4">
+          <h1>Catégories</h1>
+          <ol>
+            <li>Football</li>
+            <li>Formule 1</li>
+            <li>Sports de combat</li>
+              <ul>
+                <li>MMA</li>
+                <li>Boxe</li>
+              </ul>
+            <li>Basketball</li>
+          </ol>
+        </div>
+
+
+        <div id="supporter" class="col-md-4">
+          <div class="card" style="width: 100%;">
+            <img src="supporters.jpg" class="card-img-top" alt="supporters psg">
+            <div class="card-body">
+              <h5 class="card-title">Les supporters</h5>
+              <p class="card-text">Le supportarisme fait partie intégrante du sport de nos jours.<br> Parmis eux les supporters du Paris Saint Germain par exemple.</p>
+              <a href="https://fr.wikipedia.org/wiki/Supporters_du_Paris_Saint-Germain" class="btn btn-primary">En savoir plus</a>
+            </div>
+          </div>
+
+              <h2>Les supporters</h2>
+              <p>On distingue plusieurs niveaux d'implication chez les supporters.<br>
+                - Les supporters occasionnels se rendent ponctuellement au stade de leur équipe favorite, de façon autonome. Certains vont regarder les matches dans des bars ou des pubs qui les retransmettent à la télévision.<br>
+                - Certains supporters s'abonnent au stade de leur équipe favorite, afin d'assister à tous ses matches à domicile. Cette proportion dépend de plusieurs facteurs dont le palmarès du club considéré et du degré d'engouement local pour le football.<br>
+                - Les supporters les plus passionnés s'organisent en groupes de supporters officiels ou non officiels. Ces associations de supporters sont créées afin d'organiser les encouragements. Ces groupes ont plus ou moins de pouvoir : certains vont jusqu'à contrôler en partie la billetterie du stade, d'autres élisent le président de leur club de football. Certains clubs possèdent plusieurs groupes de supporters, parfois plus d'une dizaine.</p>
+              <a href="https://fr.wikipedia.org/wiki/Supporter_de_football"><button type="button" class="btn btn-outline-secondary">En savoir plus</button></a>
+        </div>
+
+
+        <div id="stade" class="col-md-4">
+          <div class="card" style="width: 100%;">
+            <img src="stade.png" class="card-img-top" alt="parc des princes">
+            <div class="card-body">
+              <h5 class="card-title">Lieu de rencontres</h5>
+              <p class="card-text">Les stades, endroit mythique ou s'écrit l'histoire.<br> De grands monuments pouvant accueillir des dizaines de milliers de personnes comme le somptueux Parc des Princes.</p>
+              <a href="https://fr.wikipedia.org/wiki/Parc_des_Princes" class="btn btn-primary">En savoir plus</a>
+            </div>
+          </div>
+
+
+            <h2>Les stades</h2>
+            <p>Les premiers stades anglais sont rarement « à l'anglaise », c'est-à-dire de forme rectangulaire en suivant les lignes du terrain au plus près. En effet, depuis les années 1880 et jusqu'à la démolition en 2003 de l'enceinte de Wembley dans la banlieue de Londres, la forme elliptique des tribunes est courante. Une piste plane ceinture souvent le terrain de football afin de permettre la tenue de courses de lévriers ou de Speedway.<br>De même en France, où les stades sont avant tout des vélodromes mettant à disposition en leur centre une vaste étendue gazonnée que les footballeurs et autres rugbymen colonisent. Ainsi, le Parc des Princes à Paris est inauguré le 17 juillet 1897 en tant que stade vélodrome et il faut attendre 1900 pour voir les footballeurs évoluer dans ce stade ceinturé d'une piste cycliste elliptique. En Italie et au Portugal, le cyclisme prend aussi son essor avant l'apparition du football. Le plus fameux des architectes de stades de l'époque est l'Écossais Archibald Leitch.</p>
+            <a href="https://fr.wikipedia.org/wiki/Stade_de_football"><button type="button" class="btn btn-outline-secondary">En savoir plus</button></a>
+        </div>
+      </div>
+  </div>
+
+
+
+
+    <footer id="bas"> &copy; Webforce 2022</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
